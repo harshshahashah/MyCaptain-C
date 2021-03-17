@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int b;
+    printf("Input first number :");
+    scanf("%d",&a);
+    printf("Input second number :");
+    scanf("%d",&b);
+    int c = a*b;
+    if(a%b == 0)
+    {
+        printf("The LCM of %d and %d is %d",a,b,a);
+    }
+    else if(b%a == 0)
+    {
+        printf("The LCM of %d and %d is %d",a,b,b);
+    }
+    else
+    {
+        printf("The LCM of %d and %d is %d",a,b,c);
+    }
+}
